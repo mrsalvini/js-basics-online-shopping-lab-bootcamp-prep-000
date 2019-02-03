@@ -27,6 +27,7 @@ function viewCart() {
       result += `and ${cart[i].itemName} at ${itemPrice}.`
     }
   }
+  return result
 }
 
 function total() {
