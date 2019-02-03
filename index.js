@@ -21,10 +21,10 @@ function viewCart() {
   var result = "In your cart, you have "
   for (let i = 0; i < cart.length; i++) {
     if (i < cart.length - 1) {
-      result += `${cart[i].itemName} at ${itemPrice}`
+      result += `${cart[i].itemName} at ${itemPrice}, `
     }
     else {
-      
+      result += `and ${cart[i].itemName} at ${itemPrice}.`
     }
   }
 }
